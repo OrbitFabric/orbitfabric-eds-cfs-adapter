@@ -19,7 +19,7 @@ python -m build --wheel
 
 The public console entry point `orbitfabric-eds-cfs` implements the accepted P0 projection lane and emits deterministic EDS, traceability and Integration Result artifacts for the supported Profile/Core boundary.
 
-P0 and P1 are retained proof gates, not claims of complete cFS/CCSDS EDS interoperability. P2 runtime proof remains active.
+P0, P1, P2 and P3 are retained native proof and conformance-characterization gates, not claims of complete cFS/CCSDS EDS interoperability or automatic target-runtime enforcement. P2 proves the pinned command/telemetry path; P3 records the observed range and undefined Function Code behavior rather than inventing stricter target policy.
 
 ## Native proof lane
 

@@ -1,12 +1,12 @@
 # OrbitFabric EDS-cFS Adapter
 
-Candidate `0.1.1` is unpublished and awaits review. See [candidate release notes](docs/releases/0.1.1.md). New releases use the canonical `github.com/OrbitFabric` authority.
+**Current published release:** [`v0.1.1`](https://github.com/OrbitFabric/orbitfabric-eds-cfs-adapter/releases/tag/v0.1.1) (2026-09-25), indexed in the [OrbitFabric Adapter Catalog](https://github.com/OrbitFabric/orbitfabric-adapter-catalog). New releases use the canonical `github.com/OrbitFabric` authority. The historical `v0.1.0` Source Coordinate remains `github.com/FAROTECH`, and Core-owned adapter lifecycle/integration contract surfaces retain candidate maturity.
 
 `orbitfabric-eds-cfs-adapter` projects OrbitFabric mission contracts into CCSDS Electronic Data Sheets and carries that contract into the native NASA EdsLib / cFS integration lane.
 
 The adapter is deliberately a bridge, not a replacement for cFS mission architecture. OrbitFabric owns mission-level semantics, the Projection Profile owns explicit target binding, the selected cFS mission owns concrete topic allocation, and EdsLib / MissionLib / cFE remain authoritative for native realization and runtime behavior.
 
-> **Release line:** `0.1.0`. Release identity is established by the immutable `v0.1.0` tag and verified GitHub Release assets. A branch checkout is not a release substitute.
+> **Release line:** `0.1`. `v0.1.1` is the current published post-migration identity-normalization patch, with the existing projection behavior and pinned NASA target lane unchanged. The original `v0.1.0` was published on 2026-09-07 under its historical FAROTECH Source Coordinate; its tagged source and published bytes remain unchanged. A branch checkout is not a substitute for exact published release identity.
 
 ## Choose your path
 
@@ -245,7 +245,7 @@ The same discipline is used for range constraints: projection of a semantic cons
 
 Additional cFS applications and command-line tools used by the native proofs are pinned by exact commit in their harnesses. NASA source code is not vendored in this repository.
 
-No broader cFS, EdsLib or generic/full CCSDS EDS compatibility range is claimed by `0.1.0`.
+No broader cFS, EdsLib or generic/full CCSDS EDS compatibility range is claimed by the `0.1` release line.
 
 ## Integration Coverage
 
@@ -259,10 +259,10 @@ See **[Integration Coverage](coverage/integration-coverage.md)**.
 
 The adapter is verified through OrbitFabric Adapter Manager after the checkout package source, built wheel and acquisition wheelhouse are removed. Installed execution must reproduce the retained EDS, traceability and Integration Result bytes exactly.
 
-The `v0.1.0` release workflow publishes only:
+The current published `v0.1.1` release contains only these publisher-owned assets:
 
 ```text
-orbitfabric_eds_cfs_adapter-0.1.0-py3-none-any.whl
+orbitfabric_eds_cfs_adapter-0.1.1-py3-none-any.whl
 adapter-release.json
 SHA256SUMS
 ```
@@ -280,7 +280,7 @@ console command             orbitfabric-eds-cfs
 adapter / integration id    orbitfabric-eds-cfs
 operation                   eds_cfs_projection
 source coordinate           github.com/OrbitFabric:orbitfabric/eds-cfs
-version                     0.1.0
+version                     0.1.1
 ```
 
 ## Documentation
@@ -302,6 +302,7 @@ version                     0.1.0
 
 ### Release
 
+- [0.1.1 Release Notes](docs/releases/0.1.1.md)
 - [0.1.0 Release Notes](docs/releases/0.1.0.md)
 
 ## Project relationships

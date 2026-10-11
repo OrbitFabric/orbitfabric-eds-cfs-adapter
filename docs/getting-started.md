@@ -1,8 +1,10 @@
 # Getting Started
 
-## Current onboarding candidate
+## Install the current published release
 
-After approved publication of Core 1.4.0, GitHub Release Source 0.1.0 and this adapter 0.1.1, and promotion of its exact descriptor to the Catalog:
+Core [`v1.4.0`](https://github.com/OrbitFabric/orbitfabric/releases/tag/v1.4.0), GitHub Release Source [`v0.1.0`](https://github.com/OrbitFabric/orbitfabric-github-release-source/releases/tag/v0.1.0), and this adapter [`v0.1.1`](https://github.com/OrbitFabric/orbitfabric-eds-cfs-adapter/releases/tag/v0.1.1) were publicly released on 2026-09-25. The adapter's exact published Release Descriptor is indexed in the canonical Catalog. Product publication does not promote Core-owned adapter lifecycle or integration contracts from candidate maturity; no PyPI publication is assumed.
+
+Use the published Core installation manifest and exact adapter version:
 
 ```bash
 python3 -m venv .venv
@@ -13,15 +15,15 @@ orbitfabric adapter list
 orbitfabric adapter verify <instance-id>
 ```
 
-These candidate releases are not yet published. The new installed identity is `github.com/OrbitFabric:orbitfabric/eds-cfs@0.1.1`. No clone, manual adapter download or Project Lock is required. Use `--catalog-revision <commit-sha>` to pin the Catalog, or `--catalog ./catalog.json` for a local snapshot.
+The installed identity is `github.com/OrbitFabric:orbitfabric/eds-cfs@0.1.1`. The Catalog/provider path requires no repository clone, manual adapter download or Project Lock. Use `--catalog-revision <40-character-commit-sha>` to pin the Catalog, or `--catalog ./catalog.json` for a local snapshot. For the reference application's input files and native proof scripts, use the matching `v0.1.1` tagged source. Publication alone does not establish a new external greenfield end-to-end acceptance of this coordinated version.
 
 ## Historical manual installation reference
 
-The prior-release instructions below preserve the historical baseline. They are not the current canonical onboarding demonstration. Historical FAROTECH Source Coordinates remain immutable.
+The following explicit-source instructions preserve the historical `v0.1.0` reference baseline and FAROTECH Source Coordinate. They are not the current `v0.1.1` Catalog-based onboarding path. Historical release identities, assets and native evidence are not rewritten.
 
 This guide describes the normal consumer path for the `v0.1.0` OrbitFabric EDS-cFS Adapter release.
 
-Until `v0.1.0` is actually published, the repository remains pre-release. Do not treat repository source bytes as a substitute for published release assets.
+`v0.1.0` was published on 2026-09-07; its exact release assets and tagged source remain available for this historical procedure. Repository source bytes alone are not a substitute for published release artifacts.
 
 ## Validated baseline
 
@@ -35,6 +37,10 @@ The first release is deliberately narrow and evidence-backed.
 | NASA cFE | commit `c5fb2b4d540bd55eb6c3707da7dd13eee679d4dd` |
 
 No broader cFS, EdsLib or generic CCSDS EDS compatibility range is claimed by `v0.1.0`.
+
+## Historical explicit-source installation and execution
+
+The numbered steps below use historical `v0.1.0` identities, exact Core validation and target-runtime observations. Do not silently mix these historical assets with the current `v0.1.1` Catalog installation above.
 
 ## 1. Create a clean consumer environment
 

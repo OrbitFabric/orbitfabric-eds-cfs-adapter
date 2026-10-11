@@ -92,15 +92,23 @@ MISSING
 - a tag-triggered GitHub Release workflow that creates a draft, downloads the release assets back from GitHub, verifies the published bytes, and only then publishes the release;
 - full P0/P1/P2/P3/C1 regression on one final source HEAD.
 
-The canonical Source Coordinate is:
+The historical `v0.1.0` Source Coordinate was:
+
+```text
+github.com/FAROTECH:orbitfabric/eds-cfs
+```
+
+The current published `v0.1.1` Source Coordinate is:
 
 ```text
 github.com/OrbitFabric:orbitfabric/eds-cfs
 ```
 
+The logical key is unchanged; historical release identity is preserved.
+
 ### C2-B: published product and Catalog consumer proof
 
-C2-B starts only after the verified `v0.1.0` GitHub Release exists.
+C2-B is the post-publication Catalog/consumer validation gate for the historical `v0.1.0` release. That release was published on 2026-09-07, and the canonical Catalog now retains both its exact FAROTECH identity and the post-migration `v0.1.1` release. The following controls define the C2-B evidence obligations; mere publication or Catalog membership does not independently prove their execution.
 
 It requires:
 
