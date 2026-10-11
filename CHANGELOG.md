@@ -4,6 +4,20 @@ All notable product changes will be documented here.
 
 ## Unreleased
 
+## 0.1.1 - 2026-09-25
+
+### Changed
+
+- Published the post-migration Source Coordinate `github.com/OrbitFabric:orbitfabric/eds-cfs@0.1.1`, with the matching package and release metadata.
+- Preserved the `eds_cfs_projection` behavior, pinned Core/NASA native target lanes, and historical `v0.1.0` FAROTECH Source Coordinate.
+
+### Publication
+
+- Published `v0.1.1` with the matching wheel, `adapter-release.json` and `SHA256SUMS`; recorded the exact published descriptor digest in the canonical Adapter Catalog.
+- Kept Core-owned lifecycle/integration contracts at candidate maturity, without claiming a new post-publication greenfield acceptance.
+
+## 0.1.0 - 2026-09-07
+
 ### C2 public release readiness
 
 - rebaselined the product identity from `0.1.0.dev0` to release candidate `0.1.0` without changing projection semantics;
@@ -75,4 +89,4 @@ All notable product changes will be documented here.
 - established final repository/package identity and clean bootstrap conformity;
 - added the Integration Package Manifest, CLI execution identity, packaging, tests and repository conformance controls.
 
-No public versioned release has been published yet.
+`v0.1.0` was published on 2026-09-07 with the original FAROTECH Source Coordinate. Its productization and native acceptance evidence remain historical; the current post-migration patch release is `v0.1.1`.
